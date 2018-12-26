@@ -7,6 +7,6 @@ RUN apt-get update -qqy && \
 
 ENV VERSION 1
 
-VOLUME [ "/sources" ]
+VOLUME [ "/sources", "/output" ]
 WORKDIR /sources
 CMD [ "deps/bin/run.sh" ]
