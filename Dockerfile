@@ -5,7 +5,6 @@ RUN apt-get update -y && \
         ca-certificates python3-pip python3-setuptools rpm make file && \
     apt-get clean -y && \
     rm -rf /var/lib/apt/lists/* && \
-    ln -s /usr/bin/pip3 /usr/bin/pip && \
     pip install -q virtualenv==16.7.5 Sphinx==1.7.9
 
 ENV VERSION 1
