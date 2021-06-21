@@ -2,7 +2,7 @@ FROM ubuntu:20.04
 
 RUN apt-get update -y && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-        ca-certificates python3-pip python3-setuptools rpm make file && \
+        ca-certificates python3-pip python3-setuptools python3-virtualenv rpm make file && \
     apt-get clean -y && \
     rm -rf /var/lib/apt/lists/*
 
